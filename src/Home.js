@@ -2,14 +2,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useEffect, useState } from "react"
 import Table from 'react-bootstrap/Table';
 import Button from 'react-bootstrap/Button';
-import ReactDOM from 'react-dom'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
-import { faBackspace, faTrash } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { FaBeer } from "@react-icons/all-files/fa/FaBeer";
-import { IconName } from "react-icons/ai";
-
-
 
 function Home() {
     const url = 'http://localhost:9000/api/personas'
@@ -26,17 +18,6 @@ function Home() {
     useEffect(() => {
         fetchApi()
     }, [])
-    // const [post, setposts] = useState([]);
-    // useEffect(() => {
-    //     const getPerson = () => {
-    //         fetch('http://localhost:9000/api/personas')
-    //         .then(response => response.json())
-    //         .then(response => console.log(response))
-    //     }
-
-    //     getPerson()
-    // },[])
-    let hola = "aaa"
 
     return (
 
